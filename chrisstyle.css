@@ -1,0 +1,235 @@
+/*FONT*/
+
+h1, h2, h3, h4{
+	font-weight: 400;
+}
+
+p, li, a {
+	font-weight: 200;
+}
+
+.container{
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+
+/*HEADER*/
+
+.topnav-right{
+	float: right;
+}
+
+header.site-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #FF9D00;
+	padding: 20px;
+}
+body.home .site-header {
+	width:100%;
+	position: absolute;
+	top:0;
+}
+
+.main-nav ul{
+	display: flex;
+	list-style: none;
+	margin-bottom: 15px;
+}
+
+.main-nav ul li{
+	margin-left: 40px;
+	margin-rigth:40px;
+}
+
+.main-nav ul li a{
+	color: white;
+	font-weight: 500;
+}
+
+
+/*FOOTER*/
+
+.site-footer{
+  padding:15px;
+  bottom: 0;
+  width: 100%;
+	background-color: #FF9D00;
+	display: flex;
+	flex-direction: column;
+	postion: absolute;
+}
+
+.site-footer a{
+	color: white;
+}
+
+.site-footer ul{
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	gap: 50px;
+
+}
+
+.site-footer li{
+	font-weight: 400;
+	font-size: 16px;
+	color: white;
+}
+
+.site-footer img{
+	height: 25px;
+	width: 100%;
+}
+
+/*HOMEPAGE*/
+.home-hero{
+	background-color: #FF9D00;
+	height: 650px;
+}
+
+.home-hero h1{
+	color: white;
+	font-size: 48px;
+}
+
+.home-hero p{
+	color: white;
+	font-weight: 400;
+}
+
+.home-hero img{
+	height: 600px;
+	width: 100%;
+	border-radius: 15%;
+	border: 5px solid white;
+}
+
+.button{
+	border-radius: 12px;
+	background-color:#FF9D00;
+	border-color: white;
+}
+
+.port-btn {
+	text-align: center;
+	margin: auto;
+	padding: 20px;
+}
+
+.button a{
+	color: white;
+	font-weight: 400;
+}
+
+.hero-text{
+	position: absolute;
+	top: 15%;
+} 
+
+
+/*CONTACT PAGE*/
+
+.contact_title{
+	background-color: #FF9D00;
+}
+
+.contact_title h1{
+	font-size: 64px;
+	margin: 0 auto;
+	padding: 20px;
+	color: white;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.contactinfo{
+	background-color: #FF9D00;
+	height: 300px;
+}
+
+.contactinfo h2{
+	color:white;
+	text-align: center;
+	font-size: 36px;
+}
+
+.contactinfo a{
+	color: white;
+	display: grid;
+	place-items: center;
+}
+
+/*PORTFOLIO*/
+
+.port-featured{
+	background-color: #FF9D00;
+}
+
+.port-featured h1{
+	margin-bottom: 60px;
+	color: white;
+	font-size: 48px;
+}
+
+.port-featured img{
+	height: 250px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.caption{
+	text-align: center;
+	color: white;
+}
+
+.caption h4{
+	font-size: 24px;
+	margin-bottom: 2px;
+}
+
+.pic-title{
+	margin-bottom: 60px;
+}
+
+.imdb-btn{
+	display: block;
+	margin: auto;
+	padding: 20px;
+}
+
+.port-demos{
+	height: 550px;
+}
+
+.port-demos h1{
+	font-size: 48px;
+	padding: 20px;
+	margin-top: 40px;
+	display: grid;
+	place-items: center;
+}
+
+.port-demos caption{
+	caption-side: bottom;
+}
+
+.res-btn{
+	text-align: center;
+
+}
+
+.port-demos img{
+	height: 45px;
+	width: 45px;
+	float: right;
+	margin-top: 7px;
+}
+
+.port-demos audio{
+	width: 490px;
+}
