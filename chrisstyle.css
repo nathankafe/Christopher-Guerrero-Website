@@ -8,6 +8,8 @@ p, li, a {
 	font-weight: 200;
 }
 
+
+
 .container{
 	max-width: 1200px;
 	margin-left: auto;
@@ -51,6 +53,30 @@ body.home .site-header {
 }
 
 
+.contactinfo a{
+	color: white;
+}
+
+.contactinfo a:visited{
+	color: white;
+}
+
+.contactinfo a:hover, .contactinfo a:focus, .contactinfo a:active{
+	color: white;
+}
+
+.button a{
+	color: white;
+}
+
+.button a:visited{
+	color: white;
+}
+
+.button a:hover, .button a:focus, .button a:active{
+	color: white;
+}
+
 /*FOOTER*/
 
 .site-footer{
@@ -84,12 +110,18 @@ body.home .site-header {
 .site-footer img{
 	height: 25px;
 	width: 100%;
+	transition: width 0.5s, height 0.5s;
+}
+
+.site-footer img:hover{
+	height: 30px;
+	width: 100%;
 }
 
 /*HOMEPAGE*/
 .home-hero{
 	background-color: #FF9D00;
-	height: 650px;
+	height: 750px;
 }
 
 .home-hero h1{
@@ -131,6 +163,11 @@ body.home .site-header {
 	top: 15%;
 } 
 
+.hero-text h4{
+	text-align: center;
+	color: white;
+}
+
 
 /*CONTACT PAGE*/
 
@@ -139,7 +176,7 @@ body.home .site-header {
 }
 
 .contact_title h1{
-	font-size: 64px;
+	font-size: 48px;
 	margin: 0 auto;
 	padding: 20px;
 	color: white;
@@ -149,7 +186,8 @@ body.home .site-header {
 
 .contactinfo{
 	background-color: #FF9D00;
-	height: 300px;
+	height: 295px;
+
 }
 
 .contactinfo h2{
@@ -162,6 +200,12 @@ body.home .site-header {
 	color: white;
 	display: grid;
 	place-items: center;
+	transition: border 0.3s;
+}
+
+.contactinfo a:hover{
+	border-radius: 12px;
+	border: 5px solid white;
 }
 
 /*PORTFOLIO*/
@@ -172,8 +216,8 @@ body.home .site-header {
 
 .port-featured h1{
 	margin-bottom: 60px;
-	color: white;
 	font-size: 48px;
+	color: white;
 }
 
 .port-featured img{
@@ -190,6 +234,7 @@ body.home .site-header {
 .caption h4{
 	font-size: 24px;
 	margin-bottom: 2px;
+	color: white;
 }
 
 .pic-title{
@@ -228,6 +273,12 @@ body.home .site-header {
 	width: 45px;
 	float: right;
 	margin-top: 7px;
+	transition: width 0.5s, height 0.5s;
+}
+
+.port-demos img:hover{
+	width: 50px;
+	height: 50px;
 }
 
 .port-demos audio{
