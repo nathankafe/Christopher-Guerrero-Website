@@ -4,7 +4,7 @@
 	<title>Chris Guerrero Home</title>
 	<link rel="stylesheet" href="chrisstyle.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 </head>
 
 	<body>
@@ -14,7 +14,7 @@
 			<nav class="main-nav">
 				<div class="topnav-right">
 				<ul>
-					 <li><a href="index.html">Home</a></li>
+					 <li><a href="homepage.html">Home</a></li>
 					 <li><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
@@ -34,9 +34,7 @@
 						<div class="hero-text">
 							<h1>My Name is Christopher Guerrero</h1> <br>
 							<p>I am an actor & voice actor based in Dallas, Texas. After years as a stage performer, I transitioned into primarily voice over work in 2011. Since then, I've voiced in over 250+ titles.</p>
-							<p>A few of the companies I've provided voice work for include Crunchyroll, miHoYo, Bandai Namco Entertainment, Hi-Rez Studios, Netflix, Stunlock Studios, Okratron 5000, Gearbox Software, Capcom, etc.</p><br>
-
-							<h4>Check Out my Portfolio Below!<h4>
+							<p>A few of the companies I've provided voice work for include Crunchyroll, miHoYo, Bandai Namco Entertainment, Hi-Rez Studios, Netflix, Stunlock Studios, Okratron 5000, Gearbox Software, Capcom, etc.</p>
 						
 						</div><!--text end-->
 					</div><!--column end-->
@@ -79,12 +77,14 @@
 					<figcaption><h4>Shadow</h4></figcaption>
 					<figcaption><div class="pic-title">SK8 the Infinity</div></figcaption>
 				</div> <!--third column end-->
-
-				<div class="imdb-btn">
-					<button class="button"><a href="https://www.imdb.com/name/nm5210839/" target="_blank" rel="noopener noreferrer">View My IMDB</a></button>
-				</div><!--btn end-->
-
 			</div><!--row end-->
+
+			<div class="imdb-btn">
+					<div class="col-12 d-flex justify-content-center">
+					<button class="button"><a href="https://www.imdb.com/name/nm5210839/" target="_blank" rel="noopener noreferrer">View My IMDB</a></button>
+				</div>
+			</div>
+
 		</div><!--container end-->
 	</div><!--portfolio featured section end-->
 
@@ -95,27 +95,33 @@
 		<div class="col-md-6">
 		<h1>Listen to My Demos!</h1>
 
+		<div class="audio-container">
 		<audio controls>
 			<source src="Audiobook Demo.mp3" type="audio/mpeg"><!--audio component-->
 			Your browser does not support the audio element.
 		</audio> <a href="Audiobook Demo.mp3"download><img src="downloadbutton.png"></a><!--download element-->
+		</div>
 		<p>Audiobook Demo</p>
 
 		<br>
 
+		<div class="audio-container">
 		<audio controls>
 			<source src="Christopher Guerrero Character Demo.mp3" type="audio/mpeg"><!--audio component-->
 			Your browser does not support the audio element.
 		</audio> <a href="Christopher Guerrero Character Demo.mp3" download><img src="downloadbutton.png"></a><!--download element-->
+		</div>
 		<p>Character Demo</p>
 
 		<br>
 
+		<div class="audio-container">
 		<audio controls>
 			<source src="Christopher Guerrero Commercial Demo.wav" type="audio/wav"><!--audio component-->
 			Your browser does not support the audio element.
 		</audio> <a href="Christopher Guerrero Commercial Demo.wav" download><img src="downloadbutton.png"></a><!--download element-->
-		<p>Commercial Demo</p>
+	</div>
+	<p>Commercial Demo</p>
 
 		</div> <!--audio column end-->
 
@@ -130,18 +136,19 @@
 	</div><!--container end-->
 </div>
 
+<br>
+
 		<div class="site-footer">
 			<div class="container">
 				<ul>
 					<li><a href="https://x.com/ChrisGuerreroVA" target="_blank" rel="noopener noreferrer"><img src="x_logo.png"></a></li>
-				<li><a href="https://www.instagram.com/chrisguerrerova/" target="_blank" rel="noopener noreferrer"><img src="insta_logo.png"></a></li>
+					<li><a href="https://www.instagram.com/chrisguerrerova/" target="_blank" rel="noopener noreferrer"><img src="insta_logo.png"></a></li>
+					<div class="imdb">
 					<li><a href="https://www.imdb.com/name/nm5210839/" target="_blank" rel="noopener noreferrer"><img src="imdblogo.png"></a></li>
+				</div>
 				</ul>
 			</div>
 		</div>
 
 
 	</body>
-
-
-
