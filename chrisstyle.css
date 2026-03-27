@@ -8,14 +8,76 @@ p, li, a {
 	font-weight: 200;
 }
 
+/*MOBILE TARGETTING*/
+
+@media (max-width: 767px) {
 
 
-.container{
-	max-width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0;
+	body{
+		font-size: 16px !important;
+		line-height: 1.5 !important;
+		padding-bottom: 60px;
+	}
+
+	.navbar{
+		padding: 0.5rem 1 rem !important;
+	}
+
+	html, body{
+		overflow-x: hidden;
+	}
+
+	h1, h2, h3, h4, a{
+		text-align: center;	
+	}
+
+	.hero-text h1{
+		padding: 1.25rem 0;
+	}
+
+	.contactinfo a{
+		padding: 1.25rem 0;
+	}
+
+	.contactinfo{
+		padding: 0 5rem 0;
+	}
+
+	.site-footer{
+		position: fixed;
+	}
+
+	.contactinfo {
+		height: 31rem !important
+	}
+
+	.home-hero{
+		margin-top: -1px;
+	}
+
+	.contact_title{
+		margin-top: -1px;
+	}
+
+	.contactinfo{
+		margin-top: -1px;
+	}
+
+	.hero-text{
+		transform: translate(0%, 0%)!important;
+	}
+	
 }
+
+
+/*CONTAINER DIMENSIONS*/
+.container{
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+
 
 /*HEADER*/
 
@@ -82,11 +144,11 @@ body.home .site-header {
 .site-footer{
   padding:15px;
   bottom: 0;
+  left: 0;
   width: 100%;
 	background-color: #FF9D00;
 	display: flex;
 	flex-direction: column;
-	postion: absolute;
 }
 
 .site-footer a{
@@ -121,7 +183,8 @@ body.home .site-header {
 /*HOMEPAGE*/
 .home-hero{
 	background-color: #FF9D00;
-	height: 750px;
+	padding: 0 0 40px;
+	position: relative;
 }
 
 .home-hero h1{
@@ -135,10 +198,12 @@ body.home .site-header {
 }
 
 .home-hero img{
-	height: 600px;
+	height: auto;
 	width: 100%;
 	border-radius: 15%;
 	border: 5px solid white;
+	object-fit: cover;
+	position: relative;
 }
 
 .button{
@@ -159,13 +224,17 @@ body.home .site-header {
 }
 
 .hero-text{
-	position: absolute;
-	top: 15%;
+	transform: translate(0px, 30%);
 } 
 
 .hero-text h4{
 	text-align: center;
 	color: white;
+}
+
+.custom-half {
+	flex: 0 0 50%;
+	max-width: 50%;
 }
 
 
@@ -187,7 +256,6 @@ body.home .site-header {
 .contactinfo{
 	background-color: #FF9D00;
 	height: 295px;
-
 }
 
 .contactinfo h2{
@@ -212,10 +280,14 @@ body.home .site-header {
 
 .port-featured{
 	background-color: #FF9D00;
+	padding: 50px 0;
+}
+
+.port-featured .row{
+	padding: 40px 0;
 }
 
 .port-featured h1{
-	margin-bottom: 60px;
 	font-size: 48px;
 	color: white;
 }
@@ -229,6 +301,12 @@ body.home .site-header {
 .caption{
 	text-align: center;
 	color: white;
+	min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 }
 
 .caption h4{
@@ -243,12 +321,14 @@ body.home .site-header {
 
 .imdb-btn{
 	display: block;
-	margin: auto;
-	padding: 20px;
+	margin: 0 auto;
 }
 
 .port-demos{
-	height: 550px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 0;
 }
 
 .port-demos h1{
@@ -267,12 +347,7 @@ body.home .site-header {
 	text-align: center;
 
 }
-
 .port-demos img{
-	height: 45px;
-	width: 45px;
-	float: right;
-	margin-top: 7px;
 	transition: width 0.5s, height 0.5s;
 }
 
@@ -282,5 +357,16 @@ body.home .site-header {
 }
 
 .port-demos audio{
-	width: 490px;
+	width: 90%;
+}
+
+
+.audio-container {
+  display: flex;
+  align-items: center; /* vertically center items */
+  gap: 10px; /* space between audio and image */
+}
+.audio-container img {
+  width: 40px;   /* adjust to taste */
+  height: auto;
 }
