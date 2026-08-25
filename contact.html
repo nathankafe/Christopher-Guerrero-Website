@@ -1,372 +1,60 @@
-/*FONT*/
-
-h1, h2, h3, h4{
-	font-weight: 400;
-}
-
-p, li, a {
-	font-weight: 200;
-}
-
-/*MOBILE TARGETTING*/
-
-@media (max-width: 767px) {
-
-
-	body{
-		font-size: 16px !important;
-		line-height: 1.5 !important;
-		padding-bottom: 60px;
-	}
-
-	.navbar{
-		padding: 0.5rem 1 rem !important;
-	}
-
-	html, body{
-		overflow-x: hidden;
-	}
-
-	h1, h2, h3, h4, a{
-		text-align: center;	
-	}
-
-	.hero-text h1{
-		padding: 1.25rem 0;
-	}
-
-	.contactinfo a{
-		padding: 1.25rem 0;
-	}
-
-	.contactinfo{
-		padding: 0 5rem 0;
-	}
-
-	.site-footer{
-		position: fixed;
-	}
-
-	.contactinfo {
-		height: 31rem !important
-	}
-
-	.home-hero{
-		margin-top: -1px;
-	}
-
-	.contact_title{
-		margin-top: -1px;
-	}
-
-	.contactinfo{
-		margin-top: -1px;
-	}
-
-	.hero-text{
-		transform: translate(0%, 0%)!important;
-	}
-	
-}
-
-
-/*CONTAINER DIMENSIONS*/
-.container{
-	width: 100%;
-	max-width: 1140px;
-	margin: 0 auto;
-}
-
-
-
-/*HEADER*/
-
-.topnav-right{
-	float: right;
-}
-
-header.site-header{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #FF9D00;
-	padding: 20px;
-}
-body.home .site-header {
-	width:100%;
-	position: absolute;
-	top:0;
-}
-
-.main-nav ul{
-	display: flex;
-	list-style: none;
-	margin-bottom: 15px;
-}
-
-.main-nav ul li{
-	margin-left: 40px;
-	margin-rigth:40px;
-}
-
-.main-nav ul li a{
-	color: white;
-	font-weight: 500;
-}
-
-
-.contactinfo a{
-	color: white;
-}
-
-.contactinfo a:visited{
-	color: white;
-}
-
-.contactinfo a:hover, .contactinfo a:focus, .contactinfo a:active{
-	color: white;
-}
-
-.button a{
-	color: white;
-}
-
-.button a:visited{
-	color: white;
-}
-
-.button a:hover, .button a:focus, .button a:active{
-	color: white;
-}
-
-/*FOOTER*/
-
-.site-footer{
-  padding:15px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-	background-color: #FF9D00;
-	display: flex;
-	flex-direction: column;
-}
-
-.site-footer a{
-	color: white;
-}
-
-.site-footer ul{
-	display: flex;
-	list-style: none;
-	justify-content: center;
-	gap: 50px;
-
-}
-
-.site-footer li{
-	font-weight: 400;
-	font-size: 16px;
-	color: white;
-}
-
-.site-footer img{
-	height: 25px;
-	width: 100%;
-	transition: width 0.5s, height 0.5s;
-}
-
-.site-footer img:hover{
-	height: 30px;
-	width: 100%;
-}
-
-/*HOMEPAGE*/
-.home-hero{
-	background-color: #FF9D00;
-	padding: 0 0 40px;
-	position: relative;
-}
-
-.home-hero h1{
-	color: white;
-	font-size: 48px;
-}
-
-.home-hero p{
-	color: white;
-	font-weight: 400;
-}
-
-.home-hero img{
-	height: auto;
-	width: 100%;
-	border-radius: 15%;
-	border: 5px solid white;
-	object-fit: cover;
-	position: relative;
-}
-
-.button{
-	border-radius: 12px;
-	background-color:#FF9D00;
-	border-color: white;
-}
-
-.port-btn {
-	text-align: center;
-	margin: auto;
-	padding: 20px;
-}
-
-.button a{
-	color: white;
-	font-weight: 400;
-}
-
-.hero-text{
-	transform: translate(0px, 30%);
-} 
-
-.hero-text h4{
-	text-align: center;
-	color: white;
-}
-
-.custom-half {
-	flex: 0 0 50%;
-	max-width: 50%;
-}
-
-
-/*CONTACT PAGE*/
-
-.contact_title{
-	background-color: #FF9D00;
-}
-
-.contact_title h1{
-	font-size: 48px;
-	margin: 0 auto;
-	padding: 20px;
-	color: white;
-	margin-bottom: 50px;
-	margin-top: 50px;
-}
-
-.contactinfo{
-	background-color: #FF9D00;
-	height: 295px;
-}
-
-.contactinfo h2{
-	color:white;
-	text-align: center;
-	font-size: 36px;
-}
-
-.contactinfo a{
-	color: white;
-	display: grid;
-	place-items: center;
-	transition: border 0.3s;
-}
-
-.contactinfo a:hover{
-	border-radius: 12px;
-	border: 5px solid white;
-}
-
-/*PORTFOLIO*/
-
-.port-featured{
-	background-color: #FF9D00;
-	padding: 50px 0;
-}
-
-.port-featured .row{
-	padding: 40px 0;
-}
-
-.port-featured h1{
-	font-size: 48px;
-	color: white;
-}
-
-.port-featured img{
-	height: 250px;
-	width: 100%;
-	object-fit: cover;
-}
-
-.caption{
-	text-align: center;
-	color: white;
-	min-height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-}
-
-.caption h4{
-	font-size: 24px;
-	margin-bottom: 2px;
-	color: white;
-}
-
-.pic-title{
-	margin-bottom: 60px;
-}
-
-.imdb-btn{
-	display: block;
-	margin: 0 auto;
-}
-
-.port-demos{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 30px 0;
-}
-
-.port-demos h1{
-	font-size: 48px;
-	padding: 20px;
-	margin-top: 40px;
-	display: grid;
-	place-items: center;
-}
-
-.port-demos caption{
-	caption-side: bottom;
-}
-
-.res-btn{
-	text-align: center;
-
-}
-.port-demos img{
-	transition: width 0.5s, height 0.5s;
-}
-
-.port-demos img:hover{
-	width: 50px;
-	height: 50px;
-}
-
-.port-demos audio{
-	width: 90%;
-}
-
-
-.audio-container {
-  display: flex;
-  align-items: center; /* vertically center items */
-  gap: 10px; /* space between audio and image */
-}
-.audio-container img {
-  width: 40px;   /* adjust to taste */
-  height: auto;
-}
+<!doctype html>
+<html>
+<head>
+	<title>Chris Guerrero Contact</title>
+	<link rel="stylesheet" href="chrisstyle.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+</head>
+
+	<body>
+
+	<header class="site-header">
+		<div class="container">
+			<nav class="main-nav">
+				<div class="topnav-right">
+				<ul>
+					 <li><a href="index.html">Home</a></li>
+					 <li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			</nav><!--nav close-->
+		</header><!--header close-->
+	</div>
+
+<div class="contact_title">
+	<div class="container">
+		<div class="row">
+			<h1>Want to Get in Touch?</h1>
+		</div>
+	</div>
+</div>
+
+<div class="contactinfo">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<h2>For Business Inquiries</h2>
+				<a href="mailto:chrisguerrerova@gmail.com">chrisquerrerova@gmail.com</a>
+			</div>
+
+			<div class="col-md-6"> <!--contact info-->
+				<h2>For Convention Bookings</h2>
+				<a href="mailto:heather@level-ent.com">heather@level-ent.com</a>
+			</div> <!--column close-->
+		</div><!--row close-->
+	</div><!--container close-->
+</div><!--contact infor close-->
+
+
+	<div class="site-footer">
+		<div class="container">
+			<ul>
+				<li><a href="https://x.com/ChrisGuerreroVA" target="_blank" rel="noopener noreferrer"><img src="x_logo.png"></a></li>
+				<li><a href="https://www.instagram.com/chrisguerrerova/"target="_blank" rel="noopener noreferrer"><img src="insta_logo.png"></a></li>
+				<li><a href="https://www.imdb.com/name/nm5210839/" target="_blank" rel="noopener noreferrer"><img src="imdblogo.png"></a></li>
+			</ul>
+		</div>
+	</div><!--footer close-->
+
+	</body>
